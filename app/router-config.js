@@ -1,7 +1,9 @@
 import { CarsController } from "./controllers/CarsController.js";
 import { ExamplesController } from "./controllers/ExamplesController.js";
 import { HomeController } from "./controllers/HomeController.js";
+import { HousesController } from "./controllers/HousesController.js";
 import { Router } from "./utils/Router.js";
+
 
 
 export const router = new Router([
@@ -17,6 +19,11 @@ export const router = new Router([
       </div>
     </div>
     `
+  },
+  {
+    path: '#/houses',
+    controller: [HousesController],
+    view: 'app/views/HousesView.html'
   },
   {
     path: '#/cars',

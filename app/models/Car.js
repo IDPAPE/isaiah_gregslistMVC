@@ -25,7 +25,7 @@ export class Car {
             src="${this.imgUrl}"
             alt="">
           <div class="card-body">
-            <h3 class="card-title text-center text-success">${this.make} ${this.model} ${this.year}</h3>
+            <h3 class="card-title text-center text-primary">${this.price}</h3>
             <p class="card-text">${this.color} ${this.mileage}
             <i class="mdi mdi-engine"></i><i class="mdi mdi-${this.TransmissionIcon}"></i>
             </p>

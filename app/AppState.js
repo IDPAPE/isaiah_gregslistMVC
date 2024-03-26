@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from './models/House.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -16,6 +17,18 @@ class ObservableAppState extends EventEmitter {
   //   new Car('tesla', 'cybertruck', 2024, 'silver', 81895, 100, true, 'https://www.digitaltrends.com/wp-content/uploads/2019/12/tesla-cybertruck-1220.jpg?resize=1200%2C630&p=1'),
   //   new Car('toyota', 'tacoma', 2018, 'cement', 35000, 72000, true, 'https://www.purosautos.com/wp-content/uploads/2018/09/2018-Toyota-Tacoma-.jpg')
   // ]
+  houses = [
+    new House({
+      year: '1974',
+      bedrooms: 3,
+      bathrooms: 2.5,
+      sqft: 1400,
+      price: 375000,
+      description: 'Newly renovated mid-century modern home',
+      imgUrl: 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'
+    })
+
+  ]
 
   cars = [
     new Car({
