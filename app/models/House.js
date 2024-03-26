@@ -15,7 +15,7 @@ export class House {
 
     get houseCard() {
         return `
-        <div class="col-4">
+    <div class="col-4 m-5">
         <div class="card">
         <img class="card-img-top"
         src="${this.imgUrl}"
