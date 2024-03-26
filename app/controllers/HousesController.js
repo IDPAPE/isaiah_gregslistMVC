@@ -1,4 +1,6 @@
 import { AppState } from "../AppState.js";
+import { housesService } from "../services/HousesService.js";
+import { getFormData } from "../utils/FormHandler.js";
 
 export class HousesController {
     constructor() {
@@ -15,6 +17,10 @@ export class HousesController {
     }
 
     createHouse() {
-
+        event.preventDefault()
+        let houseInfo = getFormData(event.target)
+        console.log(houseInfo)
+        housesService.createHouse(houseInfo)
+        this.drawHouses()
     }
 }

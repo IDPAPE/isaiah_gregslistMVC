@@ -6,9 +6,41 @@
 
 <section class="container">
     <div class="row">
-        <div class="col">
-            Form Will go here
-        </div>
+        <form class="bg-white p-3" onsubmit="app.HousesController.createHouse()">
+            <div class="row">
+                <div class="col-6">
+                    <label for="">price</label>
+                    <input type="text" class="form-control" placeholder="price" name="price">
+                </div>
+                <div class="col-6">
+                    <label for="">Square Footage</label>
+                    <input type="text" class="form-control" placeholder="sqft" name="sqft">
+                </div>
+                <div class="col-6">
+                    <label for="">Bedrooms</label>
+                    <input type="text" class="form-control" placeholder="beds" name="bedrooms">
+                </div>
+                <div class="col-6">
+                    <label for="">Bathrooms</label>
+                    <input type="text" class="form-control" placeholder="baths" name="bathrooms">
+                </div>
+                <div class="col-6">
+                    <label for="">Year</label>
+                    <input type="text" class="form-control" placeholder="year" name="year">
+                </div>
+                <div class="col-6">
+                    <label for="">Image Url</label>
+                    <input type="text" class="form-control" placeholder="URL" name="imgUrl">
+                </div>
+                <div class="col-12">
+                    <label for="">Description</label>
+                    <input type="text" class="form-control" placeholder="description" name="description">
+                </div>
+                <div class="col-12 mt-3">
+                    <button class="btn btn-primary ">submit</button>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 
