@@ -26,6 +26,7 @@ export class House {
                 <p class="card-text">bed: ${this.bedrooms}, bath: ${this.bathrooms}</p>
                 <p class="bg-primary p-2 rounded text-light fw-bold">${this.description}</p>
                 <p>Built: ${this.year}</p>
+                <button onclick="app.HousesController.deleteHouse('${this.id}')" class="btn btn-danger">delete</button>
             </div>
         </div>
     </div>

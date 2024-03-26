@@ -23,4 +23,10 @@ export class HousesController {
         housesService.createHouse(houseInfo)
         this.drawHouses()
     }
+
+    deleteHouse(id) {
+        console.log(id)
+        housesService.deleteHouse(id)
+        this.drawHouses()
+    }
 }
