@@ -22,7 +22,7 @@ export const router = new Router([
   },
   {
     path: '#/houses',
-    controller: [HousesController],
+    controllers: [HousesController],
     view: 'app/views/HousesView.html'
   },
   {

@@ -17,13 +17,13 @@ export class House {
         return `
         <div class="col-4">
         <div class="card">
-            <img class="card-img-top"
-                src="${this.imgUrl}"
-                alt="">
+        <img class="card-img-top"
+        src="${this.imgUrl}"
+        alt="">
             <div class="card-body">
                 <h3 class="card-title text-center text-primary">Price $${this.price}</h3>
                 <h4 class="card-title">Square Ft: ${this.sqft}</h4>
-                <p class="card-text">bed: ${this.bedrooms}, ${this.bathrooms}: 2</p>
+                <p class="card-text">bed: ${this.bedrooms}, bath: ${this.bathrooms}</p>
                 <p class="bg-primary p-2 rounded text-light fw-bold">${this.description}</p>
                 <p>Built: ${this.year}</p>
             </div>
