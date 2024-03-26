@@ -1,10 +1,12 @@
 import { AppState } from "../AppState.js";
+import { House } from "../models/House.js";
 import { housesService } from "../services/HousesService.js";
 import { getFormData } from "../utils/FormHandler.js";
 
 export class HousesController {
     constructor() {
         console.log('HouseController constructor loaded')
+        housesService.loadHouses()
         this.drawHouses()
     }
 
